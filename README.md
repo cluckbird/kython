@@ -21,3 +21,5 @@ build YourFileName - Build KythonScript
    *No parameter is closed by default!
 version - View current KythonScript version
 ```
+
+##### 注：ky.ka 是測試示例
