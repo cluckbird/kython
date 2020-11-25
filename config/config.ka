@@ -1,0 +1,10 @@
+#Kython 0.1
+def xinxinta(hx,sh,ce):
+    for iii in range(1,sh+1):
+        for i in range(1,(ce*2)+1,2):
+            for ii in range(1,hx+1):
+                text1 = " "*int((((2*(ce-1)+1)/2)-(i/2)+1))+"*"*i+" "*int((((2*(ce-1)+1)/2)-(i/2)+1))
+                print(text1,end="")
+            print()
+        print()
+

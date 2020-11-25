@@ -1,0 +1,31 @@
+from random import *
+from time import *
+import requests
+import sys
+
+
+
+
+def anx():
+    sys.exit()
+def sc(a,r,o1,o):
+    c=o*o1
+    return ('{: >{}}{: >1}{: <4}'.format(c,a-1,r,c))
+#print(sc(9,'r',4,'8'))初始飞行器︿(￣︶￣)︿
+c=40
+
+
+for i in range(100):#飞行器主题
+    yy=randint(10,99)
+    b=randint(2,150)
+    while c!=b:
+        list1 = ['\033[31m{}'.format(yy),'\033[32m{}'.format(yy),'\033[33m{}'.format(yy),'\033[34m{}'.format(yy),'\033[35m{}'.format(yy),'\033[36m{}'.format(yy)]
+        t=choice(list1)
+        print(sc(c,'',1,t))
+        if c>b:
+            c-=1
+        elif c<b:
+            c+=1
+        else:
+            break
+        sleep(0.01)
